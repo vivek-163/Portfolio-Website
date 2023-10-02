@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e3d6ebb09.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>Web Developer</p> -->
+                <h1>Hello! It's me <br>Vivek</h1><h3>And I'm a<span> Web developer</span></h3>
+
+            </div>
+        </div>
+    </div>
+    <!-- &&&&&&&&&&&&---about----&&&&&&&&&&&&& -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        I'm a digital architect who weaves the art of web development with the science of data. With a keyboard as my brush and data as my canvas, I create captivating online experiences and unlock hidden insights from complex datasets. Whether crafting elegant websites or unraveling data mysteries, I thrive on the synergy of creativity and analytics, transforming ideas into digital realities.
+
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C++</span><br>I'm a skilled C++ developer, adept at solving complex problems.</li>
+                            <li><span>Web Development</span><br>I'm a web developer who turns ideas into stunning online experiences. I love crafting code that brings websites to life and makes the digital world more beautiful and functional.</li>
+                            <li><span>Data Science</span><br>I'm a data scientist, transforming raw data into actionable insights.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Data Science</span><br>I have a solid foundation in data science, with hands-on experience in various aspects of the field, including data collection, data preprocessing, exploratory data analysis, and predictive modeling.</li>
+                            <li><span>Web development</span><br>I have a strong foundation in web development, with proficiency in HTML, CSS, and JavaScript, enabling me to create interactive and visually appealing web applications.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2021</span><br>Passing 12<sup>th</sup> from Delhi CBSE board</li>
+                            <li><span>Btech</span><br>Now I persuing btech from Dr. Akhilesh Das Gupta Institute of
+                                Technology and Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------portfolio------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Social Medias</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/linkedin.jpg">
+                    <div class="layer">
+                        <h3>linkedin</h3>
+                        <p>Through this you can check my linkedin profile</p>
+                        <a href="https://www.linkedin.com/in/vivek-546771232/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/github.jpeg">
+                    <div class="layer">
+                        <h3>Github</h3>
+                        <p>Through this you can check my github profile</p>
+                        <a href="https://github.com/vivek-163"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/insta.jpg.webp">
+                    <div class="layer">
+                        <h3>Instagram</h3>
+                        <p>You can also connect through instagram with me</p>
+                        <a href="https://www.instagram.com/_vivek_163/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://auth.geeksforgeeks.org/user/vivek2929r/practice" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -----------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>vivek2929.r@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7701971166</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_vivek_163/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/vivek-546771232/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright ~Vivek. Made with <i class="fa-sharp fa-solid fa-heart"></i> by vivek</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
